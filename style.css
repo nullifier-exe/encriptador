@@ -70,17 +70,19 @@ footer.footer {
   background-color: var(--accent-four);
   display: block;
   margin: auto;
+  padding-left: 10px;
 }
 
 label.user-input-label {
     /* font properties */
     font-family: Inter;
     font-size: 10px;
+    font-weight: bold;
     color: var(--black-one);
     /* position and size properties */
     display: block;
     margin: auto;
-    margin-left: 60px;
+    margin-left: 65px;
     padding: 8px;
     /* asthetic properties*/  
 }
@@ -128,19 +130,30 @@ label.user-input-label {
   height: 67px;
   min-width: 180;
   padding: 24px;
-  
-  background: var(--accent-one);
-  border: 0px;
-  border-radius: 0.5em;
-  outline-width: 0px;
-  
+
   flex: none;
   order: 0;
   flex-grow: 0;
   margin: 2px 0px;
+  
+  transition: 0.3s;
+  background: var(--accent-one);
+  border: 0px;
+  border-radius: 0.5em;
+  outline-width: 0px;
 }
 .btn:hover {
+  transition: 0.3s;
   background:var(--accent-two);
+}
+
+.input-warning {
+  /* font properties */
+  /* position and size properties */
+  position: absolute;
+  margin: auto;
+  transform: translateX(52px) translateY(6px);  
+  /* asthetic properties*/
 }
 
 #copyAlert.copy-alert {
